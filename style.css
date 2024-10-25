@@ -47,17 +47,24 @@ body{
 }
 
 .banner{
-    width: 80vw;
+    /*width: 80vw;
     height: 40vw;
-    background-color: #1D52C4;
+
     border-radius: 20px 20px 5px 5px;
     margin-top: 25px;
 
-    background-image: url(img/CAPA\ BIO.jpg);
+    background-image: url();
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center center;*/
 }
+.banner img{
+    height: 250px;
+    width: auto;
+
+    margin-top: 15px;
+}
+
 
 .nome
 {
