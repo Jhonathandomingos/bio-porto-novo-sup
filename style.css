@@ -27,23 +27,27 @@ body{
     
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
   
 
-    background: linear-gradient(45deg, #0009bd, #0044A4, #00BDFF, #009FFD,#0009bd);
-    background-size: 300% 300%;
-    animation: color 5s ease-in-out infinite;
+
 }
 
 .bio{
+
+    height: 100vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    height: 100%;
-    width: 100%;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+
+    background: linear-gradient(45deg, #000dff, #0044A4, #00BDFF, #009FFD, #0044A4, #000dff);
+    background-size: 300% 300%;
+    animation: color 2s ease-in-out infinite;
 }
 
 .banner{
@@ -59,10 +63,10 @@ body{
     background-position: center center;*/
 }
 .banner img{
-    height: 250px;
+    height: 150px;
     width: auto;
 
-    margin-top: 15px;
+    margin-top: -50px;
 }
 
 
@@ -95,7 +99,7 @@ body{
 }
 @keyframes color{
     0%{
-        background-position: 0 50%;
+        background-position: 0 70%;
     }
 }
 
@@ -108,10 +112,10 @@ body{
 
 .botao .um{
     width: 80vw;
-    height: 25vw;
+    height: 20vw;
     
     background-color: #001c58;
-    border-radius: 10px;
+    border-radius: 35px;
     color: #fff;
     font-family: sans-serif;
     font-weight: 400;
@@ -119,7 +123,7 @@ body{
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 10px;
 
     position: relative;
@@ -142,6 +146,8 @@ body{
     inset: 5px;
     border-radius: inherit;
 }
+
+
 @keyframes animate {
     100%{
         transform:  rotate(360deg);
@@ -152,9 +158,9 @@ body{
 
 .botao .dois{
     width: 80vw;
-    height: 25vw;
+    height: 20vw;
     background-color: #001c58;
-    border-radius: 10px;
+    border-radius: 35px;
     color: #fff;
     font-family: sans-serif;
     font-weight: 400;
@@ -162,7 +168,7 @@ body{
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 10px;
 
     position: relative;
@@ -186,39 +192,12 @@ body{
 }
 
 
-.botao .tres{
-    width: 80vw;
-    height: 25vw;
-    background-color: #001c58;
-    border-radius: 10px;
-    color: #fff;
-    font-family: sans-serif;
-    font-weight: 400;
-    font-style: normal;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
 
-    position: relative;
-    overflow: hidden;
-}
-.botao .tres::before{
-    content: "";
-    position: absolute;
-    width: 90vw;
-    height: 400%;
-    background: linear-gradient(180deg, #0075fc, #fffb00);
 
-    animation: animate 3s linear infinite;
-}
-.botao .tres::after{
-    content: "";
-    position: absolute;
-    background-color: #001c58;
-    inset: 5px;
-    border-radius: inherit;
+#imgdois{
+    height: 75px;
+    width: auto;
 }
 
 
@@ -231,7 +210,7 @@ body{
 }
 
 .botao .texto{
-    padding-right: 50px;
+    width: 110px;
 
     z-index: 1;
 }
@@ -264,20 +243,23 @@ body{
 .carrossel{
     box-shadow: 2px 2px 4px black;
     overflow: hidden;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
 
-    margin-top: 10px;
+    margin-top: 25px;
+    border-radius: 10px;
 }
 
 .container{
     display: flex;
     transition: tranform 0.5s ease-in-out;
     transform: translateX(0);
+    border-radius: 10px;
 }
-
 img{
     object-fit: cover;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
+
+    border-radius: 10px;
 }
